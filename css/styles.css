@@ -1,0 +1,11 @@
+body {
+    background: grey;
+}
+
+div.container {
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    background: rgb(184, 180, 180);
+}
