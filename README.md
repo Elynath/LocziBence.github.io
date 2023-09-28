@@ -1,1 +1,1 @@
-# loczibence.github.io
+# LocziBence.github.io
