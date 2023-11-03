@@ -1,25 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: rgb(255, 255, 255);
-
+    font-family: "Agbalumo"
 }
 
-div.container {
-    width: 50%;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 0 auto;
-    background: rgb(217, 232, 217);
+.content {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
 }
-div a {
-    display: block;
+
+h1 {
     text-align: center;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    padding: 10px;
+    padding-bottom: 40px;
+    color: rgb(181, 3, 3);
+    padding: 15px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+#name {
+    grid-column: 1/4;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#html {
+    grid-row: 2;
     margin-bottom: 15px;
 }
-div a:hover {
-    border: 4px solid rgb(255, 109, 109);
+
+#arthas, #tavak , #gridek {
+    padding: 15px;
+    border: 1px solid black;
+    grid-column: 1/2;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#arthas:hover {
+    background-color: grey;
+}
+
+#tavak:hover {
+    background-color: grey;
+}
+
+#gridek:hover {
+    background-color: gray;
+}
+
+#js {
+    grid-row: 2;
+}
+
+#alapok {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 15px;
+    border: 1px solid black;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#alapok:hover {
+    background-color: gray;
+}
+
+#vizsga {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#exam {
+    border: 1px solid black;
+    padding: 15px;
+    grid-column: 3;
+    grid-row: 3/5;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#exam:hover {
+    background-color: grey;
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    h1 {
+        padding-bottom: 5px;
+        color: rgb(181, 3, 3);
+    }
+
+    h2 {
+        color: red;
+    }
+
+    #name {
+        grid-column: 1/5;
+    }
+    #html {
+        grid-column: 1/5;
+    }
+    #arthas {
+        grid-column: 1/5;
+    }
+    #tavak {
+        grid-column: 1/5;
+    }
+    #gridek{
+        grid-column: 1/5;
+    }
+
+    #js {
+        grid-row: 9;
+        grid-column: 1/5;
+    }
+
+    #alapok {
+        grid-row: 10;
+        grid-column: 1/5;
+    }
+
+    #vizsga {
+        grid-row: 11;
+        grid-column: 1/5;
+    }
+
+    #exam {
+        grid-row: 12;
+        grid-column: 1/5;
+    }
 }
